@@ -8,16 +8,16 @@
     <link href="/dist/output.css" rel="stylesheet" />
   </head>
   <body>
-    <header class="flex p-6 bg-emerald-100 justify-center">
-      <a class="text-3xl" href="">Minion</a>
-      <div class="text-green-600 flex justify-center space-x-24 w-2/3 underline text-xl">
+    <header class="absolute flex p-6 bg-emerald-100 justify-center">
+      <a class="text-xl" href="">Minion</a>
+      <div class="text-green-600 sm:flex hidden justify-center space-x-24 w-2/3 underline text-xl">
         <a href="">INICIO</a>
         <a href="">BENEFICIOS</a>
         <a href="">ACERCA DE</a>
         <a href="">CONTÁCTANOS</a>
       </div>
     </header>
-    <section class="bg-emerald-100 flex p-16 justify-center">
+    <section class="bg-emerald-100 flex flex-col sm:flex-row p-16 justify-center items-center h-screen">
       <div class="w-1/2 space-y-8">
         <h1 class="text-9xl">Mac Minion</h1>
         <div class="text-2xl">
@@ -65,13 +65,89 @@
         </div>
     </section>
     <section class="flex items-center justify-center p-20 px-28 space-x-28 bg-emerald-100">
-        <div class="w-1/2 space-y-6">
+        <div class="w-1/2 space-y-6 p-8">
             <p class="text-6xl text-emerald-800">Acerca de</p>
-            <p class="text-3xl">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas libero delectus obcaecati. Quos dolore fugit animi voluptate quas, vel placeat delectus illum ut mollitia omnis rem tenetur commodi est qui inventore neque impedit sint libero eius nostrum debitis in cupiditate deserunt! Suscipit ea eaque blanditiis amet, optio sunt! Modi, doloremque. Alias placeat voluptatem iusto fugiat rerum quae facere, doloremque iure?</p>
+            <p class="text-xl py-10">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas libero delectus obcaecati. Quos dolore fugit animi voluptate quas, vel placeat delectus illum ut mollitia omnis rem tenetur commodi est qui inventore neque impedit sint libero eius nostrum debitis in cupiditate deserunt! Suscipit ea eaque blanditiis amet, optio sunt! Modi, doloremque. Alias placeat voluptatem iusto fugiat rerum quae facere, doloremque iure?</p>
+            <div class="space-x-8">
+                <button class="bg-green-700 text-white px-9 py-4 text-2xl">Comprar ahora</button>
+                <button class="bg-gray-700 text-white px-9 py-4 text-2xl">Ver detalles</button>
+            </div>
         </div>
         <div class="bg-emerald-500 rounded-full p-20">
             <img class="w-96" src="img/minion.png" alt="">
         </div>
     </section>
+    <section class="bg-white space-y-20 px-28 py-20">
+        <p class="text-center text-6xl">Nuestros productos</p>
+        <div class="flex justify-center justify-around">
+            <div class="flex items-center justify-center flex-col space-y-4">
+                <div class="flex items-center justify-center h-24 w-24 bg-white-400 rounded-full shadow-md shadow-slate-300">
+                    <img class="h-16" src="img/ice-cream-outline.svg" alt="">
+                </div>
+                <p class="text-2xl">Crema</p>
+            </div>
+            <div class="flex items-center justify-center flex-col space-y-4">
+                <div class="flex items-center justify-center h-24 w-24 bg-white-400 rounded-full shadow-md shadow-slate-300">
+                    <img class="h-16" src="img/ice-cream-outline.svg" alt="">
+                </div>
+                <p class="text-2xl">Crema</p>
+            </div>
+            <div class="flex items-center justify-center flex-col space-y-4">
+                <div class="flex items-center justify-center h-24 w-24 bg-white-400 rounded-full shadow-md shadow-slate-300">
+                    <img class="h-16" src="img/ice-cream-outline.svg" alt="">
+                </div>
+                <p class="text-2xl">Crema</p>
+            </div>
+            <div class="flex items-center justify-center flex-col space-y-4">
+                <div class="flex items-center justify-center h-24 w-24 bg-white-400 rounded-full shadow-md shadow-slate-300">
+                    <img class="h-16" src="img/ice-cream-outline.svg" alt="">
+                </div>
+                <p class="text-2xl">Crema</p>
+            </div>
+            <div class="flex items-center justify-center flex-col space-y-4">
+                <div class="flex items-center justify-center h-24 w-24 bg-white-400 rounded-full shadow-md shadow-slate-300">
+                    <img class="h-16" src="img/ice-cream-outline.svg" alt="">
+                </div>
+                <p class="text-2xl">Crema</p>
+            </div>
+        </div>
+    </section>
+    <section class="bg-white space-y-20 px-28 py-20 bg-emerald-50">
+        <p class="text-center text-6xl">TESTIMONIOS</p>
+        <div class="flex space-x-12">
+            <div class="flex items-center bg-white rounded-xl h-40 p-8 shadow-2xl">
+                <img class="h-36 rounded-full -mt-36 shadow-2xl" src="img/prodile-pic-1.jpeg" alt="">
+                <p class="text-xl text-center m-12">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit aliquam suscipit voluptate.</p>
+            </div>
+
+            <div class="flex items-center bg-white rounded-xl h-40 p-8 shadow-2xl">
+                <img class="h-36 rounded-full -mt-36 shadow-2xl" src="img/prodile-pic-1.jpeg" alt="">
+                <p class="text-xl text-center m-12">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto perferendis laborum natus.</p>
+            </div>
+        </div>
+    </section>
+    <!-- hice esta parte con grid para practicar, pero perfectamente podria ser con flex -->
+    <footer class="grid grid-cols-4 bg-emerald-100 text-lg gap-x-12 p-8">
+        <div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere doloremque aliquid quo assumenda labore repellat vitae eius? Quo, perferendis sequi.</p>
+        </div>
+        <div class="grid gap-y-5">
+            <a href="">Más vendidos</a>
+            <a href="">Cuidado de la piel</a>
+            <a href="">Higiene corporal</a>
+            <a href="">Salud mental</a>
+            <a href="">Masa muscular</a>
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, reprehenderit!
+        </div>
+        <div>
+            <p>Recibe las últimas noticias</p>
+            <div class="grid grid-cols-3 gap-x-4">
+                <input class="bg-white border-emerald-700 border-2 rounded text-xl p-1 col-span-2" type="text">
+                <button class="bg-emerald-700 text-white px-6 text-xl py-1 flex justify-center">Unirte</button>
+            </div>
+        </div>
+    </footer>
   </body>
 </html>
